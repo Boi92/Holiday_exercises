@@ -1,0 +1,126 @@
+/* Custom properties */
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(228, 45%, 44%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --shadow: 2px 8px 14px 0 hsla(229, 6%, 66%, 0.6);
+}
+/* Soft Reseit */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 5em 0 2em 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+  /* margin-bottom: 1rem; */
+}
+
+header h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Cards */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  box-shadow: var(--shadow);
+  padding: 3rem;
+  max-width: 400px;
+  /* margin: 2rem 0; */
+  border-radius: 8px;
+}
+
+.cyan {
+  border-top: 5px solid var(--cyan);
+}
+
+.red {
+  border-top: 5px solid var(--red);
+  margin-bottom: 3rem;
+}
+
+.orange {
+  border-top: 5px solid var(--orange);
+}
+.blue {
+  border-top: 5px solid var(--blue);
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.card h2 {
+  color: var(--very-dark-blue);
+}
+.card p {
+  color: var(--grayish-blue);
+}
+
+/* FE Mentor Styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 75em) {
+  body {
+    font-size: 1.8rem;
+  }
+  .card-container {
+    flex-direction: row;
+  }
+
+  .card {
+    /* margin: 2rem; */
+  }
+}
